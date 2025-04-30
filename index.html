@@ -5,6 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Halısaha Takım Dağılımı</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Drag-and-drop için SortableJS -->
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+
+  <!-- Screenshot almak için html2canvas -->
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -22,16 +28,19 @@
     <div class="controls">
       <textarea id="playerInput" placeholder="Oyuncuları yazın (Her satıra bir isim)"></textarea><br>
       <button onclick="generateTeams()">Takımları Oluştur</button>
+      <button onclick="captureTeams()" class="ms-2">📸 Ekran Görüntüsü Al</button>
     </div>
-
-    <div class="teams-wrapper container">
-      <div class="team team-yelekliler">
-        <h2>Yelekliler</h2>
-        <ul id="team1"></ul>
-      </div>
-      <div class="team team-yeleksizler">
-        <h2>Yeleksizler</h2>
-        <ul id="team2"></ul>
+    
+    <div id="screenshot-area">
+      <div class="teams-wrapper container">
+        <div class="team team-yelekliler">
+          <h2>Yelekliler</h2>
+          <ul id="team1"></ul>
+        </div>
+        <div class="team team-yeleksizler">
+          <h2>Yeleksizler</h2>
+          <ul id="team2"></ul>
+        </div>
       </div>
     </div>
   </div>
