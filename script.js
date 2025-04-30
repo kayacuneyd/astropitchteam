@@ -25,8 +25,8 @@ function generateTeams() {
   const team1 = players.slice(0, half);
   const team2 = players.slice(half);
 
-  document.getElementById("team1").innerHTML = team1.map(p => `<li>${p}</li>`).join('');
-  document.getElementById("team2").innerHTML = team2.map(p => `<li>${p}</li>`).join('');
+  document.getElementById("team1").innerHTML = team1.map(p => `<li><i class="fas fa-person-running me-2"></i>${p}</li>`).join('');
+  document.getElementById("team2").innerHTML = team2.map(p => `<li><i class="fas fa-person-running me-2"></i>${p}</li>`).join('');
 
   // Drag and drop tekrar aktifleşsin
   enableDragAndDrop();

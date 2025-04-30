@@ -5,12 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Halısaha Takım Dağılımı</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Drag-and-drop için SortableJS -->
-  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
   <!-- Screenshot almak için html2canvas -->
   <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js"></script>
-
+<!-- Drag-and-drop için SortableJS -->
+  <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.15.0/Sortable.min.js"></script>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -34,11 +35,11 @@
     <div id="screenshot-area">
       <div class="teams-wrapper container">
         <div class="team team-yelekliler">
-          <h2>Yelekliler</h2>
+          <h2><i class="fas fa-people-group me-2"></i>Yelekliler</h2>
           <ul id="team1"></ul>
         </div>
         <div class="team team-yeleksizler">
-          <h2>Yeleksizler</h2>
+          <h2><i class="fas fa-people-group me-2"></i>Yeleksizler</h2>
           <ul id="team2"></ul>
         </div>
       </div>
@@ -47,7 +48,8 @@
   <footer class="d-flex align-items-center">
     <p class="text-center">
       developed with love by 
-      <a href="https://kayacuneyt.com" target="_blank" rel="noopener noreferrer" class="text-body-secondary">Cüneyt Kaya</a>
+      <a href="https://kayacuneyt.com" target="_blank" 
+      rel="noopener noreferrer" class="text-body-secondary">Cüneyt Kaya</a>
     </p>
     
   </footer>
